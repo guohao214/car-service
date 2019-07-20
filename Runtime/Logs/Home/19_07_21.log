@@ -1,0 +1,1817 @@
+[ 2019-07-21T00:07:26+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0046s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0014s ]
+
+[ 2019-07-21T00:07:26+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0041s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0043s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0053s ]
+
+[ 2019-07-21T00:07:27+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0020s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:07:27+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002893s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0012s ]
+
+[ 2019-07-21T00:07:27+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0028s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0020s ]
+
+[ 2019-07-21T00:07:38+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:07:41+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:07:48+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:09:15+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:09:16+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000991s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:09:38+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0028s ]
+
+[ 2019-07-21T00:09:38+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0038s ]
+
+[ 2019-07-21T00:09:38+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004997s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0019s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:09:38+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:09:38+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0025s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:09:42+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:10:08+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:10:16+08:00 ] 58.100.186.233 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:10:16+08:00 ] 58.100.186.233 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000966s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:10:17+08:00 ] 58.100.186.233 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000990s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0017s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:10:17+08:00 ] 58.100.186.233 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000963s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:10:17+08:00 ] 58.100.186.233 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0026s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0023s ]
+
+[ 2019-07-21T00:10:24+08:00 ] 58.100.186.233 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:10:24+08:00 ] 58.100.186.233 /index.php?m=home&c=user&a=appAddUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `user` WHERE `open_id` = 'oEluL5STVeqJ_FDbzE0rPwTnp49E' LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2019-07-21T00:10:28+08:00 ] 58.100.186.233 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:10:28+08:00 ] 58.100.186.233 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001355s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:10:28+08:00 ] 58.100.186.233 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0016s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:10:28+08:00 ] 58.100.186.233 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0011s ]
+
+[ 2019-07-21T00:10:28+08:00 ] 58.100.186.233 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0022s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:10:53+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006423s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:10:53+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0026s ]
+
+[ 2019-07-21T00:10:53+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0014s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0042s ]
+
+[ 2019-07-21T00:10:53+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006451s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:10:53+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0025s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:10:56+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0104s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:11:08+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:11:20+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:11:34+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:11:35+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:11:43+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:12:18+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000982s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:15:47+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:15:47+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0040s ]
+
+[ 2019-07-21T00:15:47+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004419s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0016s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:15:47+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:15:47+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0029s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0018s ]
+
+[ 2019-07-21T00:15:50+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:16:05+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:16:05+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0012s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:16:05+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.013135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0019s ]
+
+[ 2019-07-21T00:16:05+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005477s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0031s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:16:05+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0013s ]
+
+[ 2019-07-21T00:16:08+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003735s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:16:08+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0048s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:16:08+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004455s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0013s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:16:08+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:16:08+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0023s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:16:43+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000987s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:16:46+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000995s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0029s ]
+
+[ 2019-07-21T00:16:46+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000997s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:16:47+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0025s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0013s ]
+
+[ 2019-07-21T00:16:47+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0029s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:16:47+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000986s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:17:28+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000998s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:19:08+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:19:09+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:21:17+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000987s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:22:04+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000995s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:22:07+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:22:07+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:22:07+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0011s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0011s ]
+
+[ 2019-07-21T00:22:07+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0029s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0013s ]
+
+[ 2019-07-21T00:22:07+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003407s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:22:10+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:22:32+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0012s ]
+
+[ 2019-07-21T00:22:32+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003369s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0040s ]
+
+[ 2019-07-21T00:22:32+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0014s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0039s ]
+
+[ 2019-07-21T00:22:32+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000980s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0022s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0060s ]
+
+[ 2019-07-21T00:22:32+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0036s ]
+
+[ 2019-07-21T00:22:35+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:22:55+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:22:55+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0028s ]
+
+[ 2019-07-21T00:22:55+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0051s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:22:55+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0051s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:22:55+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0024s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:22:59+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:23:00+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:23:01+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:23:02+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:23:43+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003884s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:23:43+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0011s ]
+
+[ 2019-07-21T00:23:43+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003392s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0014s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:23:43+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003364s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0011s ]
+
+[ 2019-07-21T00:23:43+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0025s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:25:08+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002497s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:25:08+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupList&num=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002999s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: goods_id /data/home/hyu6873880001/htdocs/Application/Home/Controller/GroupController.class.php 第 158 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `group` WHERE `disabled` = 1 ORDER BY group_id desc LIMIT 0,3   [ RunTime:0.0014s ]
+
+[ 2019-07-21T00:25:09+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0016s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:25:09+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0009s ]
+
+[ 2019-07-21T00:25:09+08:00 ] 115.174.191.219 /index.php?m=home&c=goods&a=appGoodsList&num=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: year /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 157 行.
+NOTIC: [8] Undefined index: start /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 158 行.
+NOTIC: [8] Undefined index: end /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 159 行.
+NOTIC: [8] Undefined index: grade /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 160 行.
+NOTIC: [8] Undefined index: searchType /data/home/hyu6873880001/htdocs/Application/Home/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0016s ]
+SQL: 
+            SELECT
+               g.year, g.goods_id, g.goods_name, g.brand_id, b.cn_name as brand_name, g.thumb, g.market_price, g.sell_price
+            FROM
+               goods g
+            LEFT join
+               brand b
+               ON g.brand_id = b.big_brand_id
+            WHERE  disabled = 1  
+             ORDER BY g.goods_id desc
+         [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:25:47+08:00 ] 115.174.191.219 /index.php?m=home&c=member&a=appMemberScanList&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Undefined index: num /data/home/hyu6873880001/htdocs/Application/Home/Controller/MemberController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `member_scan` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `member_scan` WHERE `uid` = 1 ORDER BY id desc LIMIT 0,100000   [ RunTime:0.0010s ]
+
+[ 2019-07-21T00:25:47+08:00 ] 115.174.191.219 /index.php?m=home&c=brand&a=appBrandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0019s ]
+SQL: SELECT `big_brand_id`,`logo`,`cn_name`,`name` FROM `brand`  [ RunTime:0.0021s ]
+
+[ 2019-07-21T00:25:47+08:00 ] 115.174.191.219 /index.php?m=home&c=group&a=appGroupUsers&group_id=109&page=1&size=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `group` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `group` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `group_user` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `user_profile`,`name`,`group_id`,`uid` FROM `group_user` WHERE `group_id` = 109 AND `disabled` = 1 LIMIT 0,12   [ RunTime:0.0011s ]
+
+[ 2019-07-21T00:25:50+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:25:51+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0042s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:25:58+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:26:01+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:29:07+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000997s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:30:20+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:30:22+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:30:27+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:32:43+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0035s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
+[ 2019-07-21T00:32:45+08:00 ] 115.174.191.219 /index.php?m=home&c=user&a=wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0052s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: user_uid /data/home/hyu6873880001/htdocs/Application/Home/Controller/HomeController.class.php 第 30 行.
+NOTIC: [8] Use of undefined constant UC_CLIENT_PATH - assumed 'UC_CLIENT_PATH' /data/home/hyu6873880001/htdocs/Application/User/Api/WXLoginHelper.class.php 第 5 行.
+
