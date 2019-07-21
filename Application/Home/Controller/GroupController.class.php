@@ -166,12 +166,24 @@ class GroupController extends HomeController {
         exit;
     }
     
-    public function appMyGroup(){
-       
+    public function appMyGroupUser(){
+        header("Access-Control-Allow-Origin:*");
+        $uid = $this->post_origin_data['uid'];   
+        $sql = 'select a.user_profile,a.name,a.group_id,a.uid from group_user a where a.uid in ( select b.uid from user b where b.parent_id='.$uid.' )  and a.disabled = 1 ';
+
+        $group_user = M('group_user')->query($sql);
+
+        echo json_encode(array('group_user_list'=>$group_user));
+        exit;
+
     }
-    
+
     public function appGroupUsers(){
         $group_id = $this->post_origin_data['group_id'];
+        if(!$group_id){
+            echo json_encode(array('group_user_list'=>[],'num'=>0));
+            exit;
+        }
         $where = [
             'group_id'=>$group_id,
             'disabled'=>1,
@@ -229,6 +241,10 @@ class GroupController extends HomeController {
             }
         }
     }
+    //用户参的团
+    public function appUserGroup(){
+
+    }
     //添加
     public function appAddGroupUser(){
         $data = $this->post_origin_data; 
@@ -238,27 +254,17 @@ class GroupController extends HomeController {
         $is_group = $data['is_group'];
 
         if($info){
-            $_info = 
-            M('group_user')->where(['is_group'=>1,'disabled'=>1,'goods_id'=>$data['goods_id'],'group_id'=>$data['group_id']])->count();
-            
-            if($_info == 0){
-                if($is_group == 1){
-                    $data['uid'] = $info['uid'];
-                    $data['user_profile'] = $info['avatarurl'];
-                }else{
-                    echo json_encode(array('status'=>0,'msg'=>'抱歉，未开团！'));
-                    exit;
-                }                
-            }else if($_info){
-                if($is_group == 2){
-                    $data['uid'] = $info['uid'];
-                    $data['user_profile'] = $info['avatarurl'];
-                }else{
-                    echo json_encode(array('status'=>0,'msg'=>'抱歉，您已发过拼团！'));
-                    exit; 
-                }
-                
-            }            
+            $_info = M('group_user')->where(['uid'=>$info['uid'],'disabled'=>1])->count();
+            if($_info){
+                echo json_encode(array('status'=>0,'msg'=>'抱歉，您已参与或发过拼团！'));
+                exit; 
+            }else{
+                $data['uid'] = $info['uid'];
+                $data['user_profile'] = $info['avatarurl'];
+            }                      
+        }else{
+            echo json_encode(array('status'=>0,'msg'=>'用户不在存在！'));
+            exit; 
         }
 
         file_put_contents('thumb.txt', '------'.json_encode($data),FILE_APPEND);

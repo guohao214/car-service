@@ -113,7 +113,27 @@ class UserController extends HomeController {
         return $fileimgname;
     }
 
-
+    public function appAddCommission(){
+       header("Access-Control-Allow-Origin:*");
+       $commission = $this->post_origin_data;
+       $where = [
+           'parent_id'=>$commission['parent_id'],
+           'member_id'=>$commission['member_id'],
+           'type'=>$commission['type']
+       ];
+       $info = M('commission')->where($where)->find();
+        file_put_contents('thumb.txt', '------'.json_encode($this->post_origin_data),FILE_APPEND);
+        if(empty($info)){
+            if(M('commission')->add($commission)){
+                echo json_encode(array('status'=>1,'msg'=>'成功！'));
+            }else{
+                echo json_encode(array('status'=>0,'msg'=>'抱歉，失败！'));
+            }
+        }else{
+            echo json_encode(array('status'=>0,'msg'=>'已领取！'));
+        }
+       
+    }
 	/* 用户注册接口 */
 	public function appAddUser(){
        header("Access-Control-Allow-Origin:*");
@@ -133,6 +153,8 @@ class UserController extends HomeController {
                 echo json_encode(array('status'=>0,'msg'=>'抱歉，登录失败！'));
             }
        }else{
+            $group = M('group_user')->where(['uid'=>$info['uid']])->find();
+            $info = array_merge($info,$group);
             echo json_encode(array('status'=>1,'msg'=>'已登录，不能重复登录', 'data'=>$info));
        }
 	} 
@@ -142,7 +164,15 @@ class UserController extends HomeController {
         header("Access-Control-Allow-Origin:*");
        $user = $this->post_origin_data;
        $openId = $user['open_id'];
-       $info = M('user')->where(['open_id'=>$openId])->find();
+       $uid = $user['uid'];
+       $where = [];
+       if($openId){
+            $where['open_id'] = $openId;
+       }
+       if($uid){
+            $where['uid'] = $uid;
+       }
+       $info = M('user')->where($where)->find();
        echo json_encode(array('status'=>1,'msg'=>'已登录', 'data'=>$info));
     }
 
