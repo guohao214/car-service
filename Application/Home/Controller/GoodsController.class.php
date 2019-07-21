@@ -221,9 +221,21 @@ class GoodsController extends HomeController {
         if($goods){
             $goods['num'] = count($goods['upload_list_1']) + count($goods['upload_list_2']) + count($goods['upload_list_3']) + count($goods['upload_list_4']);
         }
+
+        $scan = [
+            'brand_id'=>$brand_id,
+            'goods_id'=>$goods_id,
+            'title'=>$goods['goods_name'],
+            'url'=>$this->post_origin_data['url'],
+            'uid'=>$this->post_origin_data['uid'],
+            'scan_info'=>json_encode($goods)
+        ];
+        M('member_scan')->add($scan);
+
         echo json_encode($goods);
         exit;
     }
+
     //获取详情(小程序)
     public function appCarDetail(){
         $goods_id = $this->post_origin_data['goods_id'];

@@ -154,7 +154,7 @@ class UserController extends HomeController {
             }
        }else{
             $group = M('group_user')->where(['uid'=>$info['uid']])->find();
-            $info = array_merge($info,$group);
+            array_merge($info,$group);
             echo json_encode(array('status'=>1,'msg'=>'已登录，不能重复登录', 'data'=>$info));
        }
 	} 

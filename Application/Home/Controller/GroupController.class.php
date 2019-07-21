@@ -133,23 +133,7 @@ class GroupController extends HomeController {
         }
         exit;
     }
-    private function time_diff($time_arr){
-        if($time_arr['start_time'] < 10 && $time_arr['end_time'] <10){
-            $time_arr['start_time'] = '0' + '' + $time_arr['start_time'];
-            $time_arr['end_time'] = '0' + '' + $time_arr['end_time'];
-        }
-        $startdate = $time_arr['start_date'] + ' ' + $time_arr['start_time'];
-        $enddate = $time_arr['end_date'] + ' ' + $time_arr['end_time'];
-        $date = floor((strtotime($enddate)-strtotime($startdate))/86400);
-        $hour = floor((strtotime($enddate)-strtotime($startdate))%86400/3600);
-        $minute = floor((strtotime($enddate)-strtotime($startdate))%86400/60);
-        $second = floor((strtotime($enddate)-strtotime($startdate))%86400%60);
-        echo $date*24 + $hour ;
-        echo '-';
-        echo json_encode($enddate) ;
-        echo json_encode($time_arr['start_time']) ;
-        echo '-';
-    }
+
     //获取团列表
     public function appGroupList(){
         header("Access-Control-Allow-Origin:*");
@@ -166,12 +150,35 @@ class GroupController extends HomeController {
         exit;
     }
     
+    /*
+    * 我的团队 下级用户 列表
+    */
     public function appMyGroupUser(){
         header("Access-Control-Allow-Origin:*");
         $uid = $this->post_origin_data['uid'];   
-        $sql = 'select a.user_profile,a.name,a.group_id,a.uid from group_user a where a.uid in ( select b.uid from user b where b.parent_id='.$uid.' )  and a.disabled = 1 ';
+        $sql = 'select a.user_profile,a.name,a.group_id,a.uid,b.status 
+            from group_user a
+            left join user b on a.uid = b.uid
+            where b.parent_id ='.$uid.' and a.disabled = 1 ';
 
         $group_user = M('group_user')->query($sql);
+
+        if($group_user){
+            $where = [
+               'parent_id'=>$uid,
+            ];
+
+            $commission = M('commission')->where($where)->getField('member_id');
+
+            foreach ($group_user as $key => $value) {
+                $group_user[$key]['is_got'] = 0;
+                if(in_array($value['uid'], $commission)){
+                    $group_user[$key]['is_got'] = 1;
+                }
+            }
+        }
+        
+
 
         echo json_encode(array('group_user_list'=>$group_user));
         exit;
