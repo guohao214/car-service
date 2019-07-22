@@ -150,6 +150,7 @@ class WXLoginHelper {
         //$errCode = $pc->decryptData($encryptedData, $iv, $data );
 
         $data = $this->decryptData($encryptedData, $iv, $sessionKey);
+        
 
         
 
@@ -173,7 +174,9 @@ class WXLoginHelper {
         //cache($session3rd, $data['openId'] . $sessionKey);
 
 
-        return json_decode($data, true);
+        $result = json_decode($data, true);
+        $result['sessionKey'] = $sessionKey;
+        return $result;
     }
 
     public function decryptData( $encryptedData, $iv,$sessionKey)

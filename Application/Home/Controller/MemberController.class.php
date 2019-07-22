@@ -33,9 +33,19 @@ class MemberController extends HomeController {
         header("Access-Control-Allow-Origin:*");
         $num = $this->post_origin_data['num'] ? $this->post_origin_data['num']  : 100000;
         $where['disabled'] = 1;
-        $where['uid'] = 1;
-        $member = M('member_scan')->where($where)->page(0, $num)->order('id desc')->select();               
-        echo json_encode($member);
+        $where['uid'] = $this->post_origin_data['uid'];
+        $member_scan = M('member_scan')->where($where)->page(0, $num)->order('id desc')->select();   
+        $member_scan_new = [];
+        $goods_id = [];
+        if($member_scan){
+            foreach ($member_scan as $key => $value) {
+                if(!in_array($value['goods_id'], $goods_id)){
+                    $goods_id[] = $value['goods_id'];
+                    $member_scan_new[] = $value;
+                }
+            }
+        }            
+        echo json_encode($member_scan_new);
         exit;
     }
 

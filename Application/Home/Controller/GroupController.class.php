@@ -168,11 +168,17 @@ class GroupController extends HomeController {
                'parent_id'=>$uid,
             ];
 
-            $commission = M('commission')->where($where)->getField('member_id');
-
+            $commission = M('commission')->field('member_id')->where($where)->select();
+            $commission_ids = [];
+            if($commission){
+                foreach ($commission as $key => $value) {
+                    $commission_ids[] = $value['member_id'];
+                }
+            }
+            file_put_contents('thumb.txt', '------'.json_encode($commission_ids),FILE_APPEND);
             foreach ($group_user as $key => $value) {
                 $group_user[$key]['is_got'] = 0;
-                if(in_array($value['uid'], $commission)){
+                if(in_array($value['uid'], $commission_ids)){
                     $group_user[$key]['is_got'] = 1;
                 }
             }

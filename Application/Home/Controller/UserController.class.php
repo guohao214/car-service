@@ -55,6 +55,29 @@ class UserController extends HomeController {
         return $str;
     }
 
+    public function appGetPhone(){
+        header("Access-Control-Allow-Origin:*");
+        $data = $this->post_origin_data;
+        
+        $sessionKey = urldecode($data["sessionKey"]);
+        $encryptedData = urldecode($data["encryptedData"]);
+        $iv = urldecode($data["iv"]);
+        $open_id = urldecode($data["open_id"]);
+        $wxHelper = new WXLoginHelper();
+        $data = $wxHelper->decryptData($encryptedData, $iv, $sessionKey);
+        $data = json_decode($data,true);
+        if($data['phoneNumber']){
+            M('user')->where(['open_id'=>$open_id])->save(['phonenumber'=>'']);
+
+            if(M('user')->where(['open_id'=>$open_id])->save(['phonenumber'=>$data['phoneNumber']])){
+                echo json_encode(array('status'=>1,'msg'=>'绑定成功'));
+                exit;
+            }
+        }
+        echo json_encode(array('status'=>0,'msg'=>'绑定失败！'));
+        exit;
+    }
+
 
     public function getUnlimited(){
         header("Access-Control-Allow-Origin:*");
@@ -148,14 +171,16 @@ class UserController extends HomeController {
             unset($user['openId']);
 
            if(M('user')->add($user)){
+                $user['uid'] = M('user')->getLastInsID();
+                file_put_contents('thumb.txt', '------'.json_encode($user),FILE_APPEND);
                 echo json_encode(array('status'=>1,'msg'=>'登录成功！','data'=>$user));
             }else{
                 echo json_encode(array('status'=>0,'msg'=>'抱歉，登录失败！'));
             }
        }else{
             $group = M('group_user')->where(['uid'=>$info['uid']])->find();
-            array_merge($info,$group);
-            echo json_encode(array('status'=>1,'msg'=>'已登录，不能重复登录', 'data'=>$info));
+            $new = array_merge($info,$group);
+            echo json_encode(array('status'=>1,'msg'=>'已登录，不能重复登录', 'data'=>$new));
        }
 	} 
 

@@ -447,6 +447,19 @@ class GoodsController extends HomeController {
         exit;
     }
 
+    public function webDeleteGoods(){
+        header("Access-Control-Allow-Origin:*");
+        $data = $this->post_origin_data;
+        $goods_id = $data['goods_id'];
+        if(M('goods')->where(['goods_id'=>$goods_id])->save(['disabled'=>2])){
+            echo json_encode(['code'=>0,'msg'=>'删除成功']);
+            exit;
+        }else{
+            echo json_encode(['code'=>101,'msg'=>'删除失败']);
+            exit;
+        }
+    }
+
     public function webEditGoods(){
         header("Access-Control-Allow-Origin:*");
         $data = $this->post_origin_data;
